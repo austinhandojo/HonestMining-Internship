@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Circular';
+  font-weight: normal;
+  src: url("../../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 400;
+  src: url("../../fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 500;
+  src: url("../../fonts/CircularStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 600;
+  src: url("../../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: bold;
+  src: url("../../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+// @import 'https://use.fontawesome.com/releases/v5.0.8/css/all.css';
+// @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+// @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700';
+
+.font-primary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-light {
+    font-weight: 300 !important;
+}
+
+.font-300 {
+    font-weight: 300 !important;
+}
+
+.font-400 {
+    font-weight: 400 !important;
+}
+
+.font-500 {
+    font-weight: 500 !important;
+}
+
+.font-600 {
+    font-weight: 600 !important;
+}
+
+.font-bold {
+    font-weight: 600 !important;
+}
+
+.font-700 {
+    font-weight: 700 !important;
+}
+
+.line-height-normal {
+    line-height: normal !important;
+}
+
+.line-height-0 {
+    line-height: 0 !important;
+}
+
+.line-height-1 {
+    line-height: 1 !important;
+}
+
+.line-height-1-1 {
+    line-height: 1.1 !important;
+}
+
+.line-height-1-5 {
+    line-height: 1.5 !important;
+}
+
+.line-height-1-8 {
+    line-height: 1.8 !important;
+}
+
+.line-height-2 {
+    line-height: 2 !important;
+}
+
+.line-height-2-5 {
+    line-height: 2.5 !important;
+}
+
+.line-height-3 {
+    line-height: 3 !important;
+}
+
+strong {
+    font-weight: 700;
+}
+
+$spacing-slug: spacing !default;
+
+@for $i from 0 through 10 {
+  .#{$spacing-slug}-#{$i} {
+    letter-spacing: 1px * $i !important;
+  }
+}
+
+$font-slug: font !default;
+
+@for $i from 10 through 50 {
+  .#{$font-slug}-#{$i} {
+    font-size: 1px * $i !important;
+  }
+}

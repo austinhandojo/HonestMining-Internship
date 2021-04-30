@@ -1,0 +1,34 @@
+
+.section-policy-privacy {
+  padding-top:0.85rem;
+   
+  .title-policy-privacy {
+    h2 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 2.5rem;
+      line-height: 3.1rem;
+      margin-bottom: 2rem;
+      color: $color-primary;
+      
+    }
+  }
+
+  .policy-privacy{
+    padding: 1rem 0 0 0; 
+  }
+
+  .content-policy-privacy {
+    margin-bottom:8.5rem;
+  }
+
+}
+
+@include breakpoint (to_sm) {
+
+ 
+}
+
+@include breakpoint (xl) {
+ 
+}

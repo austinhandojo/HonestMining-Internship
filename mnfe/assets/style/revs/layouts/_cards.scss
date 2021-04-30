@@ -1,0 +1,168 @@
+.card-rev {
+  background: white;
+  border-radius: 0.7rem;
+  padding: 3rem;
+  border: 0;
+
+  &.radius-sharper {
+    border-radius: 0.4rem;
+  }
+
+  &.condensed {
+    padding: 2rem;
+  }
+
+  &.very-condensed {
+    padding: 1rem !important;
+  }
+
+  &.card-panel {
+    border-radius: 0.4rem;
+    padding: 0;
+
+    header {
+      padding: 0.75rem 1.25rem;
+      position: relative;
+
+      h3 {
+        margin: 0;
+        font-size: 1.25rem;
+        padding-left: 4.25rem;
+      }
+
+      & > span {
+        display: flex;
+        font-size: 2.75rem;
+        position: absolute;
+        top: 0;
+        left: 1.25rem;
+        height: 100%;
+        align-items: center;
+        z-index: 1;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 20%;
+          left: -10%;
+          width: 1.25rem;
+          height: 1.25rem;
+          border-radius: 50%;
+          border: 1px solid $color-yellow;
+          z-index: -1;
+        }
+      }
+    }
+
+    .card-content {
+      padding: 1rem 2rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1rem;
+        overflow: hidden;
+        box-shadow: inset 0 0.5rem 1rem -0.5rem rgba(#005ecb, 0.4);
+        background: $color-primary;
+      }
+    }
+  }
+
+  &.has-shadow {
+    box-shadow: 0.5rem 0.5rem 4.25rem rgba(black, 0.15);
+
+    &.shadow-blue {
+      box-shadow: 0.5rem 0.5rem 4.25rem rgba(#005ecb, 0.5);
+    }
+  }
+}
+
+.card {
+  &.card-v2 {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: $shadow-default;
+    overflow: hidden;
+
+    .card-heading {
+      border-radius: 10px 10px 0 0;
+      padding: 25px;
+
+      .card-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .card-body {
+      box-shadow: none;
+      padding: 0 25px 25px;
+    }
+
+    &.card-naked {
+      .card-heading,
+      .card-body {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint('to-sm') {
+  .card-rev {
+    padding: 2rem;
+
+    &.card-panel {
+      border-radius: 0.6rem;
+
+      header {
+        padding: 1rem 3.5rem;
+
+        h3 {
+          font-size: 2rem;
+          padding-left: 4rem;
+        }
+
+        & > span {
+          font-size: 4.5rem;
+
+          &:before {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+
+      .card-content {
+        padding: 1rem 3rem;
+      }
+    }
+  }
+
+  .card {
+    &.card-v2 {
+      .card-heading {
+        padding: 15px;
+
+        .card-title {
+          font-size: 14px;
+        }
+      }
+
+      .card-body {
+        padding: 0 15px 15px;
+      }
+    }
+  }
+
+  .box {
+    & > .card-heading {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+  }
+}

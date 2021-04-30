@@ -1,0 +1,34 @@
+.text {
+  &-hover {
+    &-primary {
+      &:hover {
+        color: darken($color-primary, 7.5%) !important;
+      }
+    }
+
+    &-secondary,
+    &-yellow {
+      &:hover {
+        color: $color-yellow !important;
+      }
+    }
+
+    &-danger {
+      &:hover {
+        color: $color-danger !important;
+      }
+    }
+  }
+
+  &-ellipsis {
+    white-space: nowrap;
+  }
+
+  @for $i from 0 through 100 {
+    @if ($i % 5 == 0) {
+      &-gray-#{ $i } {
+        color: darken(white, $i) !important;
+      }
+    }
+  }
+}

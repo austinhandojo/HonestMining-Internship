@@ -1,0 +1,7 @@
+$flows: hidden visible auto;
+
+@each $f in $flows {
+  .overflow-#{ $f } {
+    overflow: #{$f} !important;
+  }
+}

@@ -1,0 +1,28 @@
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-default {
+  color: $color-font !important;
+}
+
+.text-gray {
+  color: $color-font-light-40 !important;
+}
+
+.text-yellow {
+  color: $color-yellow !important;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.title-blog {
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+  color: #03a2de;
+  font-weight: bold;
+  margin: 42px 0;
+}

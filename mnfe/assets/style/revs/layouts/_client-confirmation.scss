@@ -1,0 +1,48 @@
+.layout-client-confirmation{
+  .wrapper{
+    height: 100vh;
+    &> .content{
+      width: 100%;
+    }
+    .top-header{
+      align-self: flex-start;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      .sidebar-open{
+        visibility: hidden;
+      }
+      img{
+        max-width: 280px;
+      }
+      .btn-logout{
+        color: #fff;
+        border: 1px solid #fff;
+        height: 37px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .layout-client-confirmation{
+    .container{
+      width: calc(100% - 30px);
+      margin-left: auto;
+      margin-right: auto;
+      max-width: none;
+      padding: 0;
+      .top-header{
+        padding: 0;
+        .sidebar-open{
+          visibility: visible;
+        }
+        .btn-logout{
+          visibility: hidden;
+          width: 0px;
+        }
+      }
+      
+    }
+  }
+}

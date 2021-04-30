@@ -1,0 +1,19 @@
+.noty_theme__custom {
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-bottom: 10px;
+
+  &.noty_type__success {
+    background-color: rgba($color-success, .9) !important;
+  }
+
+  &.noty_type__error {
+    background-color: rgba($color-danger, .9) !important;
+  }
+
+  &.noty_type__alert {
+    background-color: rgba($color-font, .9) !important;
+  }
+}

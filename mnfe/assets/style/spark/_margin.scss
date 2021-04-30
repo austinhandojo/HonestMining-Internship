@@ -1,0 +1,39 @@
+$mt-slug: mt !default;
+$mb-slug: mb !default;
+$ml-slug: ml !default;
+$mr-slug: mr !default;
+
+@for $i from 0 through 100 {
+  .#{$mt-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      margin-top: 1px * $i !important;
+    }  
+  }
+  .#{$mb-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      margin-bottom: 1px * $i !important;
+    }
+  }
+  .#{$ml-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      margin-left: 1px * $i !important;
+    }
+  }
+  .#{$mr-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      margin-right: 1px * $i !important;
+    }
+  }
+}
+
+.mt-6 {
+  margin-top: 6px !important;
+}
+
+.mt-7 {
+  margin-top: 7px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}

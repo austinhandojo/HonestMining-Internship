@@ -1,0 +1,36 @@
+.myreferral{
+    display: none;
+}
+.stakenow{
+    display: none;
+}
+.sort_ref{
+    .sorter{
+    display: none;
+}
+
+}
+@media (max-width: 1024px) {
+    .myreferral1{
+        display: none;
+    }
+    .stakenow1{
+        display: none;
+    }
+    .myreferral{
+        display: block;
+    }
+    .stakenow{
+        display: block;
+    }
+    .bannerstake{
+        font-size: 25px !important; 
+    }
+    .logos{
+        width: 25px;
+        height: 25px;
+    }
+    .stats{
+        font-size: 11.5px;
+    }
+}

@@ -1,0 +1,90 @@
+.layout-client-sign {
+  .main-header {
+    padding: 20px 0;
+
+    .logo-img {
+      img {
+        height: 70px;
+      }
+      &.alpha{
+        img {
+          height: 95px !important;
+        }
+      }
+    }
+  }
+
+  .inner {
+    min-height: calc(85vh - 110px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .box-main {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    //freddy nambahkan styling login, register
+    .title-login {
+      color:#4d4d4d;
+      letter-spacing: 0.72px;
+    }
+
+    .dont-have-any-account {
+      font-family: 'Circular';
+      color: #4d4d4d;
+      letter-spacing: 0.5px;
+    }
+
+    .checkbox-sign-register {
+      font-family: 'Circular';
+      margin-left: 5px;
+      color: #4d4d4d;
+    }
+
+    .disabled-color-blue {
+      color:#4d4d4d;
+      text-decoration: underline;
+    }
+
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-client-sign {
+    .main-header {
+      .logo-img {
+        img {
+          height: 50px;
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+      padding: 10px 25px 0px 25px;
+    }
+    .test-responsive {
+      color:green;
+    }
+
+  }
+
+  body.main-section .box-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .remember-me {
+    padding-left: 5px;
+  }
+
+}
+
+

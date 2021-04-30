@@ -1,0 +1,37 @@
+// Sizes
+$sizes: 0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.25 2.5;
+
+@mixin sizes($concat) {
+  @for $n from 0 through 50 {
+    .font-size#{ $concat }-#{ $n }-px {
+      font-size: #{$n}px !important;
+    }
+  }
+
+  @for $i from 1 through length($sizes) {
+    $value: nth($sizes, $i);
+
+    .font-size#{ $concat }-#{ $i },
+    .font-size#{ $concat }-#{ $i }-rem {
+      font-size: #{$value}rem !important;
+    }
+  }
+}
+
+$bps: xs sm md lg xl;
+
+@each $bp in $bps {
+  $concat: '';
+
+  @if ($bp != xs) {
+    $concat: #{'-' + $bp};
+  }
+
+  @if ($concat != '') {
+    @include breakpoint(#{$bp + '~'}) {
+      @include sizes($concat);
+    }
+  } @else {
+    @include sizes($concat);
+  }
+}

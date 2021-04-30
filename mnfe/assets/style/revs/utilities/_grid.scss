@@ -1,0 +1,9 @@
+@include breakpoint (xxl) {
+  .d-xxl-block {
+    display: block !important;
+  }
+
+  .d-xxl-none {
+    display: none !important;
+  }
+}

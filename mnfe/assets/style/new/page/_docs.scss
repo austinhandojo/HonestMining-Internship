@@ -1,0 +1,24 @@
+.docs-link {
+  display: inline-flex;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  z-index: 100;
+  background: $color-danger;
+  padding: 6px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+  }
+}

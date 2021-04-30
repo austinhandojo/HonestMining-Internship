@@ -1,0 +1,69 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Circular', sans-serif;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+@include breakpoint(to_sm) {
+  html {
+    font-size: 10px;
+    width: 100vw;
+    overflow-x: hidden;
+
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: none;
+      width: 280px;
+    }
+  }
+}
+
+@include breakpoint('md') {
+  html {
+    font-size: 14px;
+    width: 100vw;
+    overflow-x: hidden;
+
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+  }
+}
+
+@include breakpoint('lg') {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include breakpoint('xl') {
+  html {
+    font-size: 16px;
+
+    .container {
+      max-width: none;
+      width: 1150px;
+    }
+  }
+}
+
+@include breakpoint('xxl') {
+  html {
+    font-size: 20px;
+
+    .container {
+      width: 1540px;
+    }
+  }
+}

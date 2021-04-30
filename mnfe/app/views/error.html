@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+  font-family: 'Circular';
+  font-weight: normal;
+  src: url("/fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 400;
+  src: url("/fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 500;
+  src: url("/fonts/CircularStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 600;
+  src: url("/fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: bold;
+  src: url("/fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Circular' !important;
+}
+a{
+  color: #03a2de;
+  text-decoration: none;
+}
+.container-maintenance {
+  /* The image used */
+  background-image: url("/img/maintenancebg.png");
+  background-color: #00020d;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Centering Div Child */
+  display: flex;
+  justify-content: center;
+}
+
+.box-maintenance{
+  text-align: center;
+  margin-top: 4%;
+  width: 100%;
+  max-width: 650px;
+}
+
+.box-maintenance h1, .box-maintenance  h2{
+  padding: 0 8px;
+  margin: 0;
+  color: #fff;
+}
+
+.box-maintenance  h1{
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.box-maintenance h2{
+  font-size: 14px;
+}
+
+@media (min-width: 415px) {
+  .show-on-mobile{
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container-maintenance">
+  <div class="box-maintenance">
+      <h1>Oh Bob, <br class="show-on-mobile" >what have you done?</h1>
+      <h2>Don’t worry - everything is under control! Bob (and our team) is busy on a planned maintenance.
+        <br />Please check back soon. Meanwhile, follow our <a href="https://t.me/honestmining" target="_blank">Telegram Channel</a> for updates!</h2>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

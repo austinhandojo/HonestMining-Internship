@@ -1,0 +1,16 @@
+.modal-v2 {
+  .modal-dialog {
+    max-width: 450px;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .modal-body {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

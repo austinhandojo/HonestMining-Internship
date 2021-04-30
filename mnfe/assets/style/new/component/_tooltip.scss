@@ -1,0 +1,86 @@
+.tooltipster-noir.tooltip {
+  .tooltipster {
+    &-box {
+      left: 0 !important;
+      border: 0;
+
+      .tooltipster-content {
+        padding: 5px 7.5px !important;
+        font-size: 12px;
+      }
+
+      &:before {
+        width: 4px !important;
+        height: 4px !important;
+      }
+    }
+  }
+
+  &.tooltipster {
+    &-bottom {
+      .tooltipster-box {
+        &:before {
+          top: -12px;
+          left: calc(50% - 2px);
+        }
+
+        &:after {
+          top: -2px;
+          left: calc(50% - 10px);
+        }
+      }
+    }
+
+    &-top {
+      .tooltipster-box {
+        &:before {
+          top: auto;
+          bottom: -12px;
+          left: calc(50% - 2px);
+        }
+
+        &:after {
+          top: auto;
+          bottom: -2px;
+          left: calc(50% - 10px);
+        }
+      }
+    }
+
+    &-right {
+      .tooltipster-box {
+        &:before {
+          right: auto;
+          bottom: auto;
+          top: calc(50% - 2px);
+          left: -12px;
+        }
+
+        &:after {
+          right: auto;
+          bottom: auto;
+          left: -2px;
+          top: calc(50% - 10px);
+        }
+      }
+    }
+
+    &-left {
+      .tooltipster-box {
+        &:before {
+          left: auto;
+          bottom: auto;
+          top: calc(50% - 2px);
+          right: -12px;
+        }
+
+        &:after {
+          left: auto;
+          bottom: auto;
+          right: -2px;
+          top: calc(50% - 10px);
+        }
+      }
+    }
+  }
+}

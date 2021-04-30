@@ -1,0 +1,37 @@
+.cloud-decor {
+  width: 229px;
+  height: 106px;
+  background-image: url('../../images/cloud-1.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  &.type-2 {
+    background-image: url('../../images/cloud-2.png');
+    width: 282px;
+    height: 107px;
+  }
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
+
+  &.bottom-left {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  &.top-right {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+}

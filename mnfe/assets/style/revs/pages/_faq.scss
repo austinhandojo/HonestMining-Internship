@@ -1,0 +1,106 @@
+
+.section-faq {
+  padding-top:0.85rem; 
+  
+  .tab-content {
+    margin-bottom: 5.25rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3.1rem; 
+    color: $color-primary;
+  }
+
+  .card {
+    margin-bottom: 0rem;
+    border: none;
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+  .card-rev{
+    box-shadow: $shadow-light;
+    padding: 0;
+  }
+
+  .content-faq {
+    margin: 3.4rem 0 0 0;
+  }
+  .list-group:first-child a{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .list-group{
+    &:first-child a{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    &:last-child a{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .list-group-item { 
+    background-color: rgba(172, 172, 172, 0.16); 
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $color-line2;
+    color: $color-gray;
+    padding: 22px 1.25rem;
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #03a2de;
+    border-color: #03a2de;
+  }
+
+  .card-header {
+    background-color: rgba(0,0,0,0);
+    border-bottom: none;
+  }
+ 
+  .headline span, 
+  .headline p {
+    color: #acacac;
+  }
+
+  .headline span.active, 
+  .headline p.active, {
+    color:$color-primary;
+  }
+  .active {
+    color: $color-primary;
+  }
+
+  .headline span {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: inline;
+  }
+  
+  .headline p {
+    font-size: 1.25rem;
+    display: inline;
+  }
+
+  .card-body p {
+    padding-left: 2.1rem;
+    font-size: 1rem;
+    color: #4d4d4d;
+  }
+
+}
+
+
+@include breakpoint (to_sm) {
+
+ 
+}
+
+@include breakpoint (xl) {
+ 
+}

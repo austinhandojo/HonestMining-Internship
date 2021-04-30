@@ -1,0 +1,17 @@
+$bps: xs sm md lg xl;
+
+@each $bp in $bps {
+  $concat: '';
+
+  @if ($bp != xs) {
+    $concat: #{'-' + $bp};
+  }
+
+  @if ($concat != '') {
+    @include breakpoint(#{$bp + '~'}) {
+      @include padding($concat);
+    }
+  } @else {
+    @include padding($concat);
+  }
+}

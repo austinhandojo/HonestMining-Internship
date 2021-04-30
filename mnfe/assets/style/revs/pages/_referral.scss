@@ -1,0 +1,116 @@
+.form-control-ref{
+  border-radius: 4px;
+  width: 100%;
+  color: #03a2de !important;
+}
+.share-socmed{
+  font-size: 19px;
+  color: $color-primary;
+  display: flex;
+  align-items: center;
+  li{
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+
+    &:first-child{
+      font-size: 12px;
+    }
+  }
+  
+}
+
+.share-socmed > li{
+  margin-right: 11px !important;
+}
+
+#referralUrl{
+  border: 1px solid #e4e4e4;
+  border-radius: 21px;
+  padding-left: 18px;
+  color: $color-primary;
+}
+
+.btn-redeem{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+.status-invited{
+  color: #4bdb51;
+}
+
+table.dataTable {
+  thead{
+      th, td{
+        border-bottom: 2px solid #dee2e6 !important;
+      }
+      .sorting_desc{
+        background-image: url("/img/arrow-down.png") !important;
+      }
+      .sorting_asc{
+        background-image: url("/img/arrow-top.png") !important;
+      }
+      .sorting{
+        background-image: none !important;
+      }
+  }
+  &.display tbody tr:hover > .sorting_1{
+    background-color: transparent !important;
+  }
+}
+
+#referral-bonus-tbl{
+  tbody > tr > td:first-child{
+    text-align: right;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+  thead > tr > th:first-child{
+    width: 30px !important;
+  }
+}
+
+tr.odd > .sorting_1{
+  background: #effaff !important;
+  &:hover{
+    background: transparent;
+  }
+}
+
+table.dataTable.display tbody tr:hover > .sorting_1{
+  background-color: transparent !important;
+}
+
+#referrals-table{
+  .VueTables__search, .VueTables__limit{
+    display: none;
+  }
+  .VueTables__sort-icon{
+    float: right;
+  }
+  .table-responsive{
+    table tbody > tr > td:first-child{
+      text-align: right;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+    thead > tr > th:first-child{
+      width: 30px !important;
+      visibility: hidden;
+    }
+  }
+  .table-striped tbody tr:nth-of-type(odd){
+    background: #effaff !important;
+    &:hover{
+      background: transparent;
+    }
+  }
+}

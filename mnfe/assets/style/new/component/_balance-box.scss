@@ -1,0 +1,14 @@
+.balance-box {
+  padding: 5px 10px;
+  border: 1px solid $color-line;
+  border-radius: 4px;
+
+  span {
+    display: block;
+    text-align: right;
+
+    &:nth-child(2) {
+      font-size: 1.25em;
+    }
+  }
+}

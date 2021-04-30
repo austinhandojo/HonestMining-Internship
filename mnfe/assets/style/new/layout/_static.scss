@@ -1,0 +1,33 @@
+.layout-client-static {
+  .header--toggle {
+    .icon-bar {
+      background-color: $color-primary;
+
+      &:nth-child(2) {
+        width: 16px;
+      }
+    }
+  }
+}
+
+@include breakpoint('~md') {
+  .master-footer {
+    & > .container {
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+    }
+
+    .footer-col-1 {
+      flex-basis: 100%;
+    }
+
+    .footer-col-2,
+    .footer-col-3 {
+      flex-basis: 50%;
+    }
+
+    .footer-col-5 {
+      flex-basis: 100%;
+    }
+  }
+}

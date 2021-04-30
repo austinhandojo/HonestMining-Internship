@@ -1,0 +1,28 @@
+.bg {
+  &-yellow,
+  &-secondary {
+    background-color: $color-yellow !important;
+  }
+
+  &-white {
+    background-color: white !important;
+  }
+
+  &-gray {
+    background-color: $color-font-light-60 !important;
+  }
+
+  @for $i from 0 through 100 {
+    @if ($i % 5 == 0) {
+      &-gray-#{ $i } {
+        background-color: darken(white, $i) !important;
+      }
+
+      &-hover-gray-#{ $i } {
+        &:hover {
+          background-color: darken(white, $i) !important;
+        }
+      }
+    }
+  }
+}

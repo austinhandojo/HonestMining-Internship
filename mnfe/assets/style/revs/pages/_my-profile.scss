@@ -1,0 +1,395 @@
+.my-profile-detail-section{
+    box-shadow: none !important;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0 min-content auto;
+ 
+    .profile-photo{
+        width: 116px;
+        height: 116px;
+        background: #fff;
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+        padding: 4px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .profile-data{
+        text-align: left;
+        
+        .username{
+            font-weight: bold;
+            font-size: 1.2rem;
+
+            i {
+                color: $color-primary;
+                font-size: 14px;
+            }
+        }
+
+        .level{
+            display: none;
+            font-size: 12px;
+            color: $color-primary;
+            // display: flex;
+            align-items: center;
+            padding: 6px 12px 12px 0;
+
+            img{
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+        .member-date{
+            width: 100%;
+            font-size: 0.8rem;
+            span{font-weight: bold;}
+        }
+    }
+    .current-point{
+        width: 100%;
+        text-align: left;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+
+        .current-point-text{
+            font-size: 12px;
+        }
+
+        .current-point-value{
+            font-size: 2.2rem;
+
+            img{
+                width: 15px;
+            }
+        }
+    }
+}
+
+
+/* Achievement */
+.achievement-section{
+    box-shadow: none !important;
+    .achievement-comingsoon{
+        display: flex;
+        min-height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-achievement{
+        margin-bottom: 16px;
+
+        .badge{
+            width: 60px;
+            height: 60px;
+            background-image: $color-gradient-gray;
+            padding: 0;
+        }
+        .achievement-info{
+            text-align: left;
+            padding: 0;
+            .achievement-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .title{
+                    font-size: 14px;
+                }
+                .status{
+                    display: flex;
+                    font-size: $font-small;
+                    color: $color-complete;
+                    i{
+                        font-size: 1.3em;
+                        align-self: end;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            .achievement-body{
+                font-size: 11px;
+                padding: 14px 0;
+                min-height: 55px;
+                width: 90%;
+            }
+            .achievement-progress{
+                display: none;
+                
+                .progress{
+                    border: 1px solid $color-inactive;
+                    background: $color-white;
+                    border-radius: 3px;
+                    .progress-bar{
+                        background-image: $color-gradient-blue;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+                }
+                .progress-number{
+                    font-size: $font-small;
+                }
+                .row > div{
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .inactive{
+            .progress-bar{
+                background-image: $color-gradient-gray !important;
+            }
+        }
+    }
+    .sub-achievement>div{
+        padding-bottom: 44px;
+    }
+}
+
+/* Achievement */
+.achievement-section-coming-soon{
+    box-shadow: none !important;
+    .achievement-comingsoon{
+        display: flex;
+        min-height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-achievement{
+
+        .badge{
+            width: 60px;
+            height: 60px;
+            background-image: $color-gradient-gray;
+            padding: 0;
+        }
+        .achievement-info{
+            text-align: left;
+            padding: 0;
+            .achievement-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .title{
+                    font-size: 14px;
+                }
+                .status{
+                    display: flex;
+                    font-size: $font-small;
+                    color: $color-complete;
+                    i{
+                        font-size: 1.3em;
+                        align-self: end;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            .achievement-body{
+                font-size: 11px;
+                padding: 4px 0;
+                min-height: 55px;
+                width: 90%;
+            }
+            .achievement-progress{
+                display: none;
+                
+                .progress{
+                    border: 1px solid $color-inactive;
+                    background: $color-white;
+                    border-radius: 3px;
+                    .progress-bar{
+                        background-image: $color-gradient-blue;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+                }
+                .progress-number{
+                    font-size: $font-small;
+                }
+                .row > div{
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .inactive{
+            .progress-bar{
+                background-image: $color-gradient-gray !important;
+            }
+        }
+    }
+    .sub-achievement>div{
+        padding-bottom: 8px;
+    }
+}
+
+/* Miner Rank */ 
+.miner-rank-section{
+    box-shadow: none !important;
+    #MinerRankTab{
+        font-weight: bold;
+    }
+    #MinerRankTabContent{
+        .table th, .table td{
+            border-top: none;
+        }
+        thead th{
+            border-top: none;
+        }
+    }
+}
+
+/*Current Points */
+.current-points-section{
+    background: $color-primary;
+    border: 2px solid $color-white;
+    color: $color-white;
+    box-shadow: -5px 10px 12px 0px rgba(0, 0, 0, 0.15);
+    .card-heading{
+        background: none;
+        padding-bottom: 0;
+        .card-title{
+            color: $color-white;
+            font-weight: normal;
+        }
+    }
+    .card-body{
+        padding: 0 26px;
+
+        .points{
+            border-bottom: 1px solid #A2CADA;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 61px;
+            color: $color-yellow2;
+
+            img{
+                width: 30px;
+            }
+        }
+        .accumulated{
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+
+            .accumulated-text{
+                font-size: 12px;
+            }
+
+            .accumulated-point{
+                font-size: 18px;
+                font-weight: bold;
+                color: $color-yellow2;
+
+                img{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile and Tablet view */
+
+@media only screen and (max-width: 769px) {
+    .achievement-container{
+        //max-height: 450px;
+        //overflow-y: scroll;
+    }
+    .profile-container{
+        background: $color-primary;
+        color: $color-white;
+
+        .my-profile-detail-section{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 26px;
+        }
+        .card-heading{
+            background: none;
+            .profile-title{
+                color: $color-white;
+            }
+        }
+
+        .profile-photo-container{
+            display: flex;
+            justify-content: center;
+
+            .profile-photo{
+                width: 94px;
+                height: 94px;
+                border: 2px solid #fff;
+                background: $color-primary;
+            }
+        }
+        .profile-data{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 8px;
+
+            .username{
+                display: flex;
+                align-items: center;
+
+                i{
+                    color: $color-white;
+                    margin: 0 6px;
+                }
+            }
+
+            .level{
+                color: $color-white;
+                // display: flex;
+                align-items: center;
+                padding: 0;
+
+                span{
+                    display: none;
+                }
+            }
+
+            .member-date{
+                font-size: 1rem;
+                padding-top: 6px;
+            }
+        }
+        
+        .current-point{
+            display: flex;
+            .current-point-value{
+                font-size: 2.2rem;
+                color: $color-yellow2;
+                margin-left: 6px;
+                
+                img {
+                    width: 2.2rem;
+                }
+            }
+        }
+    }
+    
+    .sub-achievement{
+        max-height: 420px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .sub-achievement > div{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}

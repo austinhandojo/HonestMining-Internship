@@ -1,0 +1,38 @@
+$pt-slug: pt !default;
+$pb-slug: pb !default;
+$pl-slug: pl !default;
+$pr-slug: pr !default;
+
+@for $i from 0 through 100 {
+  .#{$pt-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      padding-top: 1px * $i !important;
+    }  
+  }
+  .#{$pb-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      padding-bottom: 1px * $i !important;
+    }
+  }
+  .#{$pl-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      padding-left: 1px * $i !important;
+    }
+  }
+  .#{$pr-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      padding-right: 1px * $i !important;
+    }
+  }
+}
+
+
+$p-slug: p !default;
+
+@for $i from 0 through 100 {
+  .#{$p-slug}-#{$i} {
+    @if $i % 5 == 0 {
+      padding: 1px * $i !important;
+    }  
+  }
+}

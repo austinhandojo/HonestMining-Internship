@@ -1,0 +1,87 @@
+.modal.custom {
+  .modal-content {
+    border: 0;
+    border-radius: 8px;
+    position: relative;
+
+    &.has-header {
+      border-radius: 10px 10px 8px 8px;
+
+      .modal-header {
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      box-shadow: 0 3px 6px rgba(black, 0.3);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+      background: white;
+      font-size: 2em;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGCSURBVGhD7ZjJSsNgFEarblVwngVfxAk3zhtfwrUvoIiIiIgT+DwOKycQZxSfwoUrPV/thZ/i0GpM/sA9cGhyoeE/JSRpCo7jOI7jOE6U1JY+k+Q/jvktc3iCbcW9ZBjEaxwo7qVAHSriDS8xiRhFvKCOuahBWrTiBSYRM4QWsYc1mCphzBW2Y7UMY6YRRgueoxai87sDKyWM2MXMIozfxIygRexg5hFGM1rMDXbiV4yiRWxjNBGGYs5QC7zFLiwnjNjC6CKMMOYOw5gxzEWE0YRhTDeGEZsYfYShmFPUwp8xlxGGYnQVU4Dcx1wyjq9oIffYg7liAi1C94nj0vYD5iZmEi1iQwNoxDCmF6MmjFjXIEAxRxh9zBRaxJoGnxDGPGJ0MdP4U4TRgGFMH0ZBGLGqQQVEFzODFrGiQRUo5hD13SfMLGYWfxthlMf0Y6qEEcsa/IF6zCRGLx/sv8eSBgmgmANM4oepCr1smP/YTAzFLGDuHiodx3Ecx3GcXFAovAOKRnlJxR5NYwAAAABJRU5ErkJggg==');
+      background-size: 90%;
+    }
+  }
+
+  &.modal-v2 {
+    .modal-header {
+      border-bottom: 0;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    .modal-sm {
+      max-width: 350px;
+    }
+  }
+}
+
+@include breakpoint('to-sm') {
+  .modal {
+    &.modal-v2 {
+      .modal-dialog {
+        max-width: none !important;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        align-items: flex-end;
+
+        .modal-content {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          transform: translateY(25%);
+          transition: transform 0.15s linear;
+
+          .modal-header {
+            padding: 8px 25px;
+          }
+
+          .modal-body {
+            padding: 15px 25px;
+            max-height: 80vh;
+            overflow-y: auto;
+          }
+        }
+      }
+
+      &.show {
+        .modal-dialog {
+          .modal-content {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}

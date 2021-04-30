@@ -1,0 +1,40 @@
+$card-padding: 30px;
+$card-padding-mobile: 20px;
+
+.card.card-v2 {
+  .card-heading,
+  .card-body {
+    padding: $card-padding !important;
+  }
+
+  .card-heading + .card-body {
+    padding-top: 0 !important;
+  }
+
+  .card-link {
+    font-size: 2rem;
+    background-color: rgba($color-font-light-60, 0.5);
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 6px;
+    color: $color-primary;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $color-font-light-60;
+    }
+  }
+}
+
+@include breakpoint('~sm') {
+  .card.card-v2 {
+    box-shadow: 0px 6px 7.5px rgba(black, 0.05);
+
+    .card-heading,
+    .card-body {
+      padding: $card-padding-mobile !important;
+    }
+  }
+}

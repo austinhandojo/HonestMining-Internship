@@ -1,0 +1,17 @@
+.buttonstyle{
+    border-radius: 5px !important;
+}
+
+.uploadbutton{
+        .custom-file-upload:after {
+        display: none !important;
+    }
+}
+.uploadpic{
+    display: inline-block;
+    border: 1px solid #03a2de;
+    border-radius: 100%;
+    padding: 0px 9px;
+    font-size: 20px;
+    color: #03a2de;
+}

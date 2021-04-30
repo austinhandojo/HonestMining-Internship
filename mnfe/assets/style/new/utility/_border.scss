@@ -1,0 +1,63 @@
+@include breakpoint('md~') {
+  $pos: top right bottom left;
+
+  @each $p in $pos {
+    .border-md-#{ $p } {
+      border-#{ $p }: 1px solid $color-border !important;
+    }
+  }
+}
+
+.border-color {
+  @for $i from 10 through 100 {
+    @if ($i % 10 == 0) {
+      &-gray-#{ $i } {
+        border-color: darken(white, $i) !important;
+      }
+    }
+  }
+
+  &-primary {
+    border-color: $color-primary !important;
+  }
+}
+
+$border_styles: dotted dashed solid;
+$border_position: top right bottom left;
+
+.border {
+  @each $position in $border_position {
+    &-#{ $position } {
+      @each $style in $border_styles {
+        &-style-#{ $style } {
+          border-#{ $position }-style: $style !important;
+        }
+      }
+    }
+  }
+}
+
+// Radius
+@for $i from 0 through 40 {
+  @if ($i % 2 == 0) {
+    .border-radius-#{ $i }-px {
+      border-radius: #{$i}px;
+    }
+  }
+}
+
+.border-radius-tl-0 {
+  border-top-left-radius: 0 !important;
+}
+
+.border-radius-tr-0 {
+  border-top-right-radius: 0 !important;
+}
+
+.border-radius-br-0 {
+  border-bottom-right-radius: 0 !important;
+}
+
+.border-radius-bl-0 {
+  border-bottom-left-radius: 0 !important;
+}

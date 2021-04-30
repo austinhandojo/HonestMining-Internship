@@ -1,0 +1,19 @@
+.table {
+  color: $color-font;
+}
+
+.table-v2 {
+  th {
+    border-top: 0;
+  }
+
+  td {
+    border-top: 1px solid $color-border !important;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: 1px solid $color-border !important;
+    }
+  }
+}

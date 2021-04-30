@@ -1,0 +1,135 @@
+// Heights
+$bps: xs sm md lg xl;
+
+@mixin height($concat) {
+  @for $n from 0 through 500 {
+    @if ($n % 5 == 0) {
+      .h#{ $concat }-#{ $n }-px {
+        height: #{$n}px !important;
+      }
+
+      .mh#{ $concat }-#{ $n }-px {
+        min-height: #{$n}px !important;
+      }
+    }
+  }
+
+  @for $n from 0 through 100 {
+    @if ($n % 5 == 0) {
+      .h#{ $concat }-#{ $n } {
+        height: #{$n}% !important;
+      }
+
+      .mh#{ $concat }-#{ $n } {
+        min-height: #{$n}% !important;
+      }
+    }
+  }
+
+  .h#{ $concat }-auto {
+    height: auto !important;
+  }
+
+  .mh#{ $concat }-0 {
+    height: 0 !important;
+  }
+}
+
+@each $bp in $bps {
+  $concat: '';
+
+  @if ($bp != xs) {
+    $concat: #{'-' + $bp};
+  }
+
+  @if ($concat != '') {
+    @include breakpoint(#{$bp + '~'}) {
+      @include height($concat);
+    }
+  } @else {
+    @include height($concat);
+  }
+}
+
+// Widths
+$bps: xs sm md lg xl;
+
+@mixin width($concat) {
+  @for $n from 0 through 500 {
+    @if ($n % 5 == 0) {
+      .w#{ $concat }-#{ $n }-px {
+        width: #{$n}px !important;
+      }
+
+      .mw#{ $concat }-#{ $n }-px {
+        min-width: #{$n}px !important;
+      }
+    }
+  }
+
+  @for $n from 0 through 100 {
+    @if ($n % 5 == 0) {
+      .w#{ $concat }-#{ $n } {
+        width: #{$n}% !important;
+      }
+
+      .mw#{ $concat }-#{ $n } {
+        min-width: #{$n}% !important;
+      }
+    }
+  }
+
+  .w#{ $concat }-auto {
+    width: auto !important;
+  }
+
+  .mw#{ $concat }-0 {
+    width: 0 !important;
+  }
+}
+
+@each $bp in $bps {
+  $concat: '';
+
+  @if ($bp != xs) {
+    $concat: #{'-' + $bp};
+  }
+
+  @if ($concat != '') {
+    @include breakpoint(#{$bp + '~'}) {
+      @include width($concat);
+    }
+  } @else {
+    @include width($concat);
+  }
+}
+
+// Square
+$bps: xs sm md lg xl;
+
+@mixin square($concat) {
+  @for $i from 0 through 300 {
+    @if ($i % 10 == 0) {
+      .square#{ $concat }-#{ $i } {
+        width: #{$i}px !important;
+        height: #{$i}px !important;
+      }
+    }
+  }
+}
+
+@each $bp in $bps {
+  $concat: '';
+
+  @if ($bp != xs) {
+    $concat: #{'-' + $bp};
+  }
+
+  @if ($concat != '') {
+    @include breakpoint(#{$bp + '~'}) {
+      @include square($concat);
+    }
+  } @else {
+    @include square($concat);
+  }
+}

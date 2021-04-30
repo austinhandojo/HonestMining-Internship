@@ -1,0 +1,75 @@
+body {
+  &.main-section-rev {
+    .page-content {
+      position: static;
+    }
+  }
+  
+  &.bg-curve {
+    // background-image: url('../images/bg-curve.png');
+    background-image: url('../../images/bg-full.png');
+    background-color: $color-primary;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &.bg-clouds {
+    position: relative;
+    min-height: 100vh;
+
+    &:before,
+    &:after {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      width: 139px;
+      height: 72px;
+      background-image: url('../../images/cloud-decor.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+    &:after {
+      top: auto;
+      right: auto;
+      bottom: 10%;
+      left: 5%;
+    }
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.bg-blue {
+  background-color: $color-primary !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    &.bg-curve {
+      background-size: 200% 100%;
+    }
+
+    &.bg-clouds {
+      &:before,
+      &:after {
+        width: 70px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@include dpi (2) {
+  body {
+    &.bg-curve {
+      background-image: url('../../images/bg-full@2x.png');
+    }
+  }
+}

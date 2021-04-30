@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+a {
+  &:hover {
+    color: darken($color-primary, 7.5%);
+  }
+
+  &.text-primary:hover {
+    color: darken($color-primary, 7.5%) !important;
+  }
+}
+
+body {
+  color: $color-font;
+}
+
+// tooltip
+.info-tooltip {
+  padding: 0px 5px;
+  font-size: 8px;
+  border-radius: 50%;
+  background: #3c9be5;
+  color: #fff;
+}
+
+// option control
+.option-control {
+  background: #fff;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  border-radius: 5px;
+  margin: 0 30px 0 7px;
+  font-size: 12px;
+  padding: 2px;
+}
+
+//line
+.right-dotted-blue {
+  border-right: 1px dotted #03a2de;
+}

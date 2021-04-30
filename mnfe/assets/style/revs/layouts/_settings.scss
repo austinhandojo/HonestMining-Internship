@@ -1,0 +1,27 @@
+.usehnstmobile{
+    display: none;
+}
+
+.changepassmobile{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .usehnstmobile{
+        display: block;
+    }
+    .changepassmobile{
+        display: block;
+    }
+    .usehnst{
+        display: none;
+    }
+    .changepass{
+        display: none;
+    }
+}
+.switch.custom{
+    .slider-toggle{
+        background-color: red;
+    }
+}

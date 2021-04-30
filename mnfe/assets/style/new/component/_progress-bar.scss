@@ -1,0 +1,13 @@
+.progress {
+  background-color: white;
+  border: 2px solid $color-border;
+
+  &.progress-bar-mini {
+    height: 5px;
+    overflow: hidden;
+
+    .progress-bar {
+      border-radius: 5px;
+    }
+  }
+}

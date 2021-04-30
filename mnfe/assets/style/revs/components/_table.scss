@@ -1,0 +1,54 @@
+.table-responsive {
+  table {
+    margin-bottom: 10px;
+  }
+}
+
+.table-container {
+  table {
+    th {
+      white-space: nowrap;
+    }
+
+    th,
+    td {
+      min-width: 0 !important;
+    }
+  }
+}
+
+.table {
+  justify-content: center;
+
+  &.color {
+    tbody {
+      tr:nth-child(odd) {
+        td {
+          background-color: #effaff;
+        }
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 10px !important;
+    vertical-align: middle !important;
+  }
+
+  &.tcol {
+    &-index {
+      width: 40px !important;
+    }
+  }
+
+  &.table-v2 {
+    th {
+      border-bottom: 0;
+    }
+
+    td {
+      border-top: 0;
+    }
+  }
+}

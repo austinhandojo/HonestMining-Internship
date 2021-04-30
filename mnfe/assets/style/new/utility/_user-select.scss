@@ -1,0 +1,7 @@
+$selects: none;
+
+@each $s in $selects {
+  .user-select-#{ $s } {
+    user-select: none !important;
+  }
+}

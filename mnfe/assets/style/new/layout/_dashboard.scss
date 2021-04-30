@@ -1,0 +1,44 @@
+$sidebar-width: 240px;
+
+.layout-client-dashboard {
+  .page-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .page-body {
+    .page-sidebar {
+      width: $sidebar-width;
+    }
+
+    .page-content {
+      width: calc(100% - #{$sidebar-width});
+      flex: 0 0 calc(100% - #{$sidebar-width});
+    }
+  }
+
+  .header-content {
+    width: calc(100% - #{$sidebar-width});
+    flex-shrink: 0;
+  }
+}
+
+@include breakpoint('~md') {
+  .layout-client-dashboard {
+    .page-body {
+      .page-content {
+        width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    .top-header,
+    .navbar-spark {
+      width: 50%;
+    }
+
+    .header-content {
+      width: 100%;
+    }
+  }
+}

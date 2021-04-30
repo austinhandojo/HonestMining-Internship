@@ -1,0 +1,27 @@
+.conf-box{
+  max-width: 540px !important;
+  margin: 0 auto;
+  #formSubmit{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .row{
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .button-container{
+      button{
+        width: 215px;
+      }
+    }
+  }
+}
+
+@media (max-width: 478px) {
+  .button-container{
+    flex-wrap: wrap-reverse;
+    
+    button{
+      margin-bottom: 20px;
+    }
+  }
+}
